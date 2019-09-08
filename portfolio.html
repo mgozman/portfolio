@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="portfolio.css" rel="stylesheet">
+    
+    <title>Portfolio Mariia Gozman</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type = "text/javascript">
+        $(document).ready(function(){
+
+            $( '.portfolio-item.all-portfolio').click(function() {
+                $('.portfolio-img').show('slow');
+            });
+
+            $( '.portfolio-item.nuclear').click(function() {
+                $('.portfolio-img').hide();
+                $('.portfolio-img.nuclear').show('slow');
+            });
+
+            $( '.portfolio-item.residential').click(function() {
+                $('.portfolio-img').hide();
+                $('.portfolio-img.residential').show('slow');
+            });
+            
+            $( '.portfolio-item.office').click(function() {
+                $('.portfolio-img').hide();
+                $('.portfolio-img.office').show('slow');
+            });
+            
+            $( '.portfolio-item.electric').click(function() {
+                $('.portfolio-img').hide();
+                $('.portfolio-img.electric').show('slow');
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class='menu main-menu'>
+        
+        <a class=menu-item href="#home">Home</a>
+        <a class=menu-item href="#who-i-am-chapter">Who I Am</a>
+        <a class=menu-item href="#what-i-did-chapter">What I Did</a>
+        <a class=menu-item href="#what-i-do-chapter">What I Do</a>
+        <a class=menu-item href="#portfolio-chapter">Projects</a>
+        <a class=menu-item href="#contact-chapter">Contact</a>
+        <div class=menu-button>
+            <hr color = 'black' class = 'menu-line-first'>
+            <hr color = 'black' class = 'menu-line-middle'>
+            <hr color = 'black' class = 'menu-line-last'>
+        </div>
+    </div>
+    <div id=home></div>
+
+    <div data-0="opacity:1" data-500="opacity:0.2">
+        <img class = 'make-it-logo' src = 'img/make_it_work.png' alt = "Make It logo">
+    </div>
+
+    
+    <h1 class=scroll-anchor-parent><div class=scroll-anchor id = 'who-i-am-chapter'></div>Who I am</h1>
+    <div class = 'main-info'>
+        <div class = 'who-i-am effect2 box'>
+            <h3>Hi, there! My name is Mariia. I am from Russia.</h3>
+            <h3>I was born in the small town in Siberia which you hardly ever find on a map.</h3>
+            <h3>It's over 8000 miles away from San Francisco.</h3>
+            <h3>To reach that town you need to fly about 24+ hours with 2 stops and than drive on a car for about 6 hours.</h3>
+            <h3>But now I live in California and enjoy to be here &hearts;</h3>
+            
+        </div>
+        <img class = 'who-i-am-img' src = 'img/bear.jpg' alt = 'bear'>
+    </div>
+
+    <h1 class=scroll-anchor-parent><div class=scroll-anchor id = 'what-i-did-chapter'></div>What I did</h1>
+    <div class = 'main-info'>
+        <img class = 'who-i-am-img' src = 'img/npp.jpg' alt = 'NPP'>
+        <div class = 'who-i-am effect2 box'>
+            <div class = row>
+                <div class = small_ico>
+                    <img class = 'small_ico_img arch' src="img/black.png" alt="">
+                </div>
+                <h2>Architect</h2>
+            </div>
+            <h3>I studied in Altay State Technical University where I got a Masters degree as Architect.</h3>
+            <h3>My major included software development classes.</h3>
+            <h3>I developed construction software such as an application for metal beam design or various CAD plug-ins.</h3>
+        </div>
+    </div>
+
+    <div class = 'main-info'>
+        <div class = 'who-i-am effect2 box'>
+            <div class = row>
+                <div class = small_ico>
+                    <img class = 'small_ico_img soft' src="img/black.png" alt="">
+                </div>
+                <h2>Software Specialist</h2>
+            </div>
+       
+            <h3>I got my PhD degree in Math, numerical methods and program development
+                from Saint-Petersburg State University of Architecture and Civil Engineering.
+            </h3>
+            <h3>I used my software engineering skills to develop my own application for designing wooden trusses with metal plates.</h3>
+        </div>
+        <img class = 'who-i-am-img' src = 'img/truss.jpg' alt = 'bear'>
+    </div>
+
+    <div class = 'main-info'>
+        <img class = 'who-i-am-img' src = 'img/hills.jpg' alt = 'bear'>
+        <div class = 'who-i-am effect2 box'>
+            <div class = row>
+                <div class = small_ico>
+                    <img class = 'small_ico_img bim' src="img/black.png" alt="">
+                </div>
+                <h2>BIM Specialist</h2>
+            </div>
+            <h3> At my first job I worked with Nuclear Power Plants. But majority of my expirience has high residential buildings.</h3>
+            <h3>We monitored processes, quality and filed safety.</h3>
+            <h3>My biggest project was an 18 buildings complex of 5 millions sq.f. Each building has 28 floors and 2-3 levels of underground parking.</h3>
+        </div>
+    </div>
+
+    
+    <div class="section main-info">
+        <div class = 'who-i-am effect2 box'>
+            <div class = row>
+                <div class = small_ico>
+                    <img class = 'small_ico_img electric' src="img/black.png" alt="">
+                </div>
+                <h2>Electric Engineer</h2>
+            </div>
+            <h3>I worked as Electric Engineer in California.</h3>
+            <h3>While working on my largest project in San Jose, I developed software to automate some every day operations with BIM data.</h3>
+            <h3>Day by day I learned how to operate that data with scripts instead of manually, and that got me hooked on software engineering again.</h3>
+        </div>
+        <img class = 'who-i-am-img' src = 'img/tower.jpg' alt = 'bear'>
+    </div>
+
+    <h1 class=scroll-anchor-parent><div class=scroll-anchor id = 'what-i-do-chapter'></div>What I Do</h1>
+    <div class = 'main-info'>
+        <div class = 'what-i-do'>
+            <h3>I love to learn. I always learn! </h3>
+            <h3>Working on automation scripts ignited my imagination, and since then I can only think about developing software. I cannot live without it anymore.</h3>
+            <h3>I am totally absorbed by software development.</h3>
+            <h3>I enjoy to create! I am constantly thinking of solutions and algorithms.</h3>
+            <h3>That's why one day I decided to try myself in a new role...</h3>
+        </div>
+        <img class = 'who-i-am-img main-photo' src = 'img/mariya_gozman.jpg' alt = 'mariya-gozman-photo'>
+    </div>
+
+    <div id="skrollr-body" style = "background-image: url('img/floor.jpeg');">	
+        <img class = logo src = 'img/bootstrap.png' alt = 'bootstrap logo'>
+        <img class = logo src = 'img/sql.png' alt = 'sql logo'>
+        <img class = logo src = 'img/css.png' alt = 'css logo'>
+        <img class = logo src = 'img/python.png' alt = 'python logo'>
+        <img class = logo src = 'img/java.png' alt = 'java logo'>
+        <img class = logo src = 'img/jquery.png' alt = 'jquery logo'>
+        <img class = logo src = 'img/socketio.png' alt = 'socketio logo'>
+        <img class = logo src = 'img/mean.png' alt = 'mean logo'>
+        <img class = logo src = 'img/mongo.png' alt = 'mongo logo'>
+        <img class = logo src = 'img/ajax.png' alt = 'ajax logo'>
+
+    </div>
+    
+    <div>
+        <h1 class=scroll-anchor-parent><div class=scroll-anchor id = 'portfolio-chapter'></div>Projects</h1>
+        <div class='projects'>
+            <div class='portfolio-item'>
+                <a href = 'http://18.191.255.53'>
+                    Face App
+                    <hr class = 'portfolio-line'>
+                    <p class = small>Python, Django, MySQL</p>
+                    <p class = small>CSS, HTML5, AJAX, Bootstrap</p>
+                </a>
+            </div> 
+            <div class='portfolio-item'>
+                <a href = 'http://52.15.210.201'>
+                    Food Club
+                    <hr class = 'portfolio-line'>
+                    <p class = small> Java, Spring Boot, MySQL</p>
+                    <p class = small>HTML5, CSS, Bootstrap</p>
+                </a>
+            </div>
+            <div class='portfolio-item'>
+                <a href = 'http://18.191.219.67/'>
+                    Tanks
+                    <hr class = 'portfolio-line'>
+                    <p class = small>SocketIO, JavaScript, HTML5, CSS</p>
+                </a>
+            </div>
+        </div>
+        
+        <div id = 'projects'>
+            <a href = 'http://18.191.255.53'>
+                <div class = portfolio-img  style = 'background-image: url(img/vk.png)'>
+                    <figcaption>
+                        Social network for friends with posts, comments, likes, messages, groups and comprehensive profile management.</figcaption>
+                </div>
+            </a>
+            <a href = 'http://52.15.210.201'>
+                <div class = portfolio-img  style = 'background-image: url(img/food.png)'>
+                    <figcaption>
+                        App for food enthusiasts! Upload your favorite recipes with step-by-step pictures, search for recipes by parameters, post questions and comments.</figcaption>
+                </div>
+            </a>
+            <a href = 'http://18.191.219.67/'>
+                <div class = portfolio-img  style = 'background-image: url(img/tanks.png)'>
+                    <figcaption>Two-player tanks game: drive around, kill enemies, destroy the field and defend the Eagle.</figcaption>
+                </div>
+            </a>
+        </div>
+
+        <!-- <div class='menu menu-portfolio'>
+            <div class='portfolio-item all-portfolio'>All
+                <hr class = 'portfolio-line'>
+            </div> 
+            <div class='portfolio-item nuclear'>Nuclear Power Plants
+                <hr class = 'portfolio-line'>
+            </div>
+            <div class='portfolio-item residential'>Residential buildings
+                <hr class = 'portfolio-line'>
+            </div>
+            <div class='portfolio-item electric'>Electric
+                <hr class = 'portfolio-line'>
+            </div>
+            <div class='portfolio-item office'>Offices
+                <hr class = 'portfolio-line'>
+            </div>
+        </div> -->
+    </div>
+
+    <!-- <div id = 'portfolio'>
+        
+    </div> -->
+
+    <div class=scroll-anchor-parent><div class=scroll-anchor id ='contact-chapter'></div>
+        <h1 id = 'contact-chapter'>Let's stay in touch</h1>
+        <h3>Mariia Gozman, Software Engineer, Sunnyvale, CA</h3>
+        
+        <div id = 'phone-email'>
+            <div id = 'social-contact'>
+                <span class = 'social-logo'>
+                    <a href = ''>
+                        <img src = 'img/gmail.png' alt = 'gmail-logo' href = 'https://www.linkedin.com/in/mariia-gozman-3a3ba5109/en'>
+                        <span>mariya.gozman@gmail.com</span>
+                    </a>
+                </span>
+                
+                
+                <span class = 'social-logo'>
+                    <a href = 'https://www.linkedin.com/in/mgozman/'>
+                        <img src = 'img/linkedin.png' alt = 'linkedin-logo'>
+                        <span>Mariia Gozman</span>
+                    </a>
+                </span>
+
+                <span class = 'social-logo'>
+                    <a href = 'https://www.facebook.com/mariya.gozman'>
+                        <img src = 'img/facebook.png' alt = 'facebook-logo'>
+                        <span>Mariya Gozman</span>
+                    </a>
+                </span>
+
+                <span class = 'social-logo'>
+                    <a href = 'https://www.instagram.com/mariya.gozman/'>
+                        <img src = 'img/instagram.png' alt = 'instagram-logo'>
+                        <span>Mariya.gozman</span>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div id = 'designed-by'>
+        <h5>© 2019 Mariia Gozman, Designed By Mariia Gozman</h5>
+    </div>
+
+    <script>
+        output = '';
+        figOutput = ['NPP decommissioning system from operation',
+                    'Leningradskaya NPP', 'Leningradskaya NPP (Room search system)',
+                    'Bilibino NPP', 'Bilibino NPP',
+                    'Green Hills, Moscow, 6.8 mln sq.f.',
+                    'Royal Capital, Saint-Petersburg, 1.4 mln. sq. f.',
+                    'Central Property, Saint-Petersburg, 500 000 sq.f.',
+                    'Green Hills, Moscow, 6.8 mln. sq. f.', 
+                    'Royal Capital, Saint-Petersburg, 1.4 mln. sq. f.',
+                    'Royal Capital, Saint-Petersburg, 1.4 mln. sq. f.',
+                    'Royal Capital, Saint-Petersburg, 1.4 mln. sq. f.',
+                    'Royal Capital, Saint-Petersburg, 1.4 mln. sq. f.',
+                    'Royal Capital, Saint-Petersburg, 1.4 mln. sq. f.',
+                    'Royal Capital, Saint-Petersburg, 1.4 mln. sq. f.',
+                    'River Property, Saint-Petersburg, 500000 sq.f.',
+                    'River Property, Saint-Petersburg, 500000 sq.f.',
+                    'Royal Capital, Saint-Petersburg, 1.4 mln. sq. f.',
+                    'SJSC Tower, San Jose',
+                    'SJSC Tower, San Jose', 
+                    'Village San Antonio, Mountain View',
+                    'Electric Room', 'ttry', 'ttry', 'ttry', 
+                    'ttry', 'ttry', ];
+        figClass = ['nuclear', 'nuclear','nuclear','nuclear','nuclear',
+                    'residential', 'residential', 'residential', 'residential', 
+                    'residential', 'residential', 'residential', 'residential', 
+                    'residential', 'residential', 'residential', 'residential', 
+                    'residential', 'residential', 'residential', 'office', 'electric'];
+        for (var i = 1; i <= 21; i++){
+            output += "<div class = 'portfolio-img " + figClass[i] + "' style = 'background-image: url(img/portfolio" + i + ".jpg)'>";
+            output += '<figcaption>' + figOutput[i] + '</figcaption></div>'
+        }
+        document.getElementById('portfolio').innerHTML = output;
+        console.log(output);
+    </script>
+    
+
+    
+
+    <script type="text/javascript" src="src/skrollr.min.js"></script>
+    <script type="text/javascript">
+        var s = skrollr.init();
+
+        document.querySelector('.menu-button').addEventListener('click', () => {
+            document.querySelector('.menu').classList.toggle('menu-visible');
+        });
+
+
+
+        skrollr.init({
+            forceHeight: false
+        });
+
+        skrollr.init({
+            smoothScrolling: false,
+            mobileDeceleration: 0.004
+        });
+
+
+        (function() {
+        // Init
+        var container = document.getElementById("container"),
+            inner = document.getElementById("inner");
+
+        // Mouse
+        var mouse = {
+            _x: 0,
+            _y: 0,
+            x: 0,
+            y: 0,
+            updatePosition: function(event) {
+              var e = event || window.event;
+              this.x = e.clientX - this._x;
+              this.y = (e.clientY - this._y) * -1;
+            },
+            setOrigin: function(e) {
+              this._x = e.offsetLeft + Math.floor(e.offsetWidth / 2);
+              this._y = e.offsetTop + Math.floor(e.offsetHeight / 2);
+            },
+            show: function() {
+              return "(" + this.x + ", " + this.y + ")";
+            }
+        };
+
+        mouse.setOrigin(container);
+
+        var counter = 0;
+        var refreshRate = 10;
+        var isTimeToUpdate = function() {
+            return counter++ % refreshRate === 0;
+        };
+
+      
+        var onMouseEnterHandler = function(event) {
+            update(event);
+        };
+
+        var onMouseLeaveHandler = function() {
+            inner.style = "";
+        };
+
+        var onMouseMoveHandler = function(event) {
+            if (isTimeToUpdate()) {
+                update(event);
+            }
+        };
+
+        var update = function(event) {
+            mouse.updatePosition(event);
+                updateTransformStyle(
+                    (mouse.y / inner.offsetHeight / 2).toFixed(2),
+                    (mouse.x / inner.offsetWidth / 2).toFixed(2)
+                );
+            };
+
+        var updateTransformStyle = function(x, y) {
+            var style = "rotateX(" + x + "deg) rotateY(" + y + "deg)";
+                inner.style.transform = style;
+                inner.style.webkitTransform = style;
+                inner.style.mozTranform = style;
+                inner.style.msTransform = style;
+                inner.style.oTransform = style;
+            };
+
+            container.onmousemove = onMouseMoveHandler;
+            container.onmouseleave = onMouseLeaveHandler;
+            container.onmouseenter = onMouseEnterHandler;
+        })();
+    
+    </script>
+</body>
+</html>
