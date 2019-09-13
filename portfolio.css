@@ -180,6 +180,7 @@
         letter-spacing: 2px;
         opacity: 0.5;
         cursor: pointer;
+        width: 400px;
     }
     #skrollr-body{
         background-image: url('img/parallax.png');
@@ -262,17 +263,30 @@
         text-align: center;
         margin-top: 50px;
     }
-    #social-contact .download-resume{
+    #download-resume{
         font-size: 26px;
         letter-spacing: 2px;
-        border-radius: 10px;
-        border: 1px solid black;
+        margin: 20px 30%;
+        opacity: 0.7;
+        text-align: center;
+    }
+    #download-resume a{
+        font-size: 26px;
+        letter-spacing: 2px;
         vertical-align: top;
         text-decoration: none;
-        color: black;
-        padding: 20px;
-        box-shadow: 3px 3px black;
-        margin: 30px 0px;
+        color: rgb(112, 111, 111);
+    }
+    #download-resume hr{
+        opacity: 0;
+        transition: opacity 0.4s ease-in-out;
+        width: 50%;
+    }
+    #download-resume:hover{
+        opacity: 1;
+    }
+    #download-resume:hover hr{
+        opacity: 1;
     }
     #social-contact{
         width: 100%;
